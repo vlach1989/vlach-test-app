@@ -1,0 +1,11 @@
+.cache
+.github
+.idea
+build
+dist
+lib
+node_modules
+package-lock.json
+public
+static
+/src/data/*.json
