@@ -1,0 +1,13 @@
+@import '~@gisatcz/ptr-core/lib/styles/reset.css';
+@import '~@gisatcz/ptr-core/lib/styles/base.scss';
+@import '~@gisatcz/ptr-core/lib/styles/_variables';
+@import '~@gisatcz/ptr-maps';
+@import '~@gisatcz/ptr-core';
+
+.vta-App {
+  margin: m(1) 0;
+}
+
+.vta-MapWrapper {
+  height: 30rem;
+}
