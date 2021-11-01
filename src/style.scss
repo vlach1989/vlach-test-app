@@ -3,11 +3,9 @@
 @import '~@gisatcz/ptr-core/lib/styles/_variables';
 @import '~@gisatcz/ptr-maps';
 @import '~@gisatcz/ptr-core';
-
-.vta-App {
-  margin: m(1) 0;
-}
+@import '~@gisatcz/ptr-atoms';
 
 .vta-MapWrapper {
-  height: 30rem;
+  height: 20rem;
+  margin: m(1)
 }
