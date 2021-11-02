@@ -4,6 +4,10 @@
 @import '~@gisatcz/ptr-components';
 @import '~@gisatcz/ptr-atoms';
 
+.vta-App {
+  padding: m(1);
+}
+
 .vta-MapWrapper {
   height: 20rem;
   margin: m(1)

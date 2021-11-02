@@ -65,7 +65,7 @@ const AppComponent = () => {
 	return (
 		<>
 			<Helmet defaultTitle="--- Test ---" />
-			<ConnectedAppContainer appKey="vta" dark>
+			<ConnectedAppContainer appKey="vta">
 				<App />
 			</ConnectedAppContainer>
 		</>
