@@ -1,4 +1,5 @@
 import backgroundLayers from './layers/backgroundLayers';
+import wmsLayers from "./layers/wmsLayers";
 
 export default {
 	key: '204188df-5c90-49d5-9f6d-83bed1c725bb',
@@ -37,6 +38,7 @@ export default {
 						},
 						data: {
 							backgroundLayer: backgroundLayers.osm,
+							layers: [wmsLayers.cuzkOrtofoto],
 							view: {
 								center: {lat: 50, lon: 15},
 								boxRange: 400000

@@ -6,11 +6,14 @@ import PresentationalMapWithControls from "./PresentationalMapWithControls";
 import PresentationalMapSet from "./PresentationalMapSet";
 
 import backgroundLayers from "../data/layers/backgroundLayers";
+import wmsLayers from "../data/layers/wmsLayers";
 
 const view = {
 	center: {lat: 50, lon: 15},
 	boxRange: 400000
 };
+
+const layers = [backgroundLayers.cartoGrey, wmsLayers.cuzkOrtofoto]
 
 const App = () => (
 	<div className="vta-App">
@@ -21,7 +24,7 @@ const App = () => (
 		<h3>Presentational map set</h3>
 		<PresentationalMapSet view={view} backgroundLayer={backgroundLayers.osm}/>
 		<h3>Presentational map with controls</h3>
-		<PresentationalMapWithControls view={view} backgroundLayer={backgroundLayers.osm}/>
+		<PresentationalMapWithControls view={view} backgroundLayer={backgroundLayers.osm} layers={layers}/>
 		<h3>Presentational map</h3>
 		<PresentationalMap view={view} backgroundLayer={backgroundLayers.osm}/>
 	</div>
