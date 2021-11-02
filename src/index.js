@@ -1,13 +1,24 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Provider} from '@gisatcz/ptr-state';
+import {isServer} from '@gisatcz/ptr-core';
 
-import './style.scss';
+import createStore from './state/Store';
+import {App} from './app';
 
-import App from "./App";
+const {store} = createStore();
+
+const Application = () => (
+	<Provider store={store}>
+		<App />
+	</Provider>
+);
 
 function renderApp() {
-	const rootNode = document.getElementById('root');
-	ReactDOM.render(<App />, rootNode);
+	const rootEl = document.getElementById('root');
+	const render =
+		isServer || rootEl.hasChildNodes() ? ReactDOM.hydrate : ReactDOM.render;
+	render(<Application />, rootEl);
 }
 
 renderApp();

@@ -1,6 +1,7 @@
 import React from "react";
-import Map from "./Map";
+import PresentationalMap from "./PresentationalMap";
 import PresentationalMapWithControls from "./PresentationalMapWithControls";
+import PresentationalMapSet from "./PresentationalMapSet";
 
 const view = {
 	center: {lat: 50, lon: 15},
@@ -17,8 +18,9 @@ const backgroundLayer = {
 
 const App = () => (
 	<div className="vta-App">
+		<PresentationalMapSet view={view} backgroundLayer={backgroundLayer}/>
 		<PresentationalMapWithControls view={view} backgroundLayer={backgroundLayer}/>
-		<Map view={view} backgroundLayer={backgroundLayer}/>
+		<PresentationalMap view={view} backgroundLayer={backgroundLayer}/>
 	</div>
 );
 

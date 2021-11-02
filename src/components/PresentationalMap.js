@@ -1,7 +1,7 @@
 import React from "react";
 import {ReactLeafletMap} from "@gisatcz/ptr-maps";
 
-const Map = ({view, backgroundLayer}) => {
+const PresentationalMap = ({view, backgroundLayer}) => {
     return (
         <div className="vta-MapWrapper">
             <ReactLeafletMap
@@ -13,4 +13,4 @@ const Map = ({view, backgroundLayer}) => {
     );
 }
 
-export default Map;
+export default PresentationalMap;
