@@ -1,5 +1,6 @@
 import backgroundLayers from './layers/backgroundLayers';
 import wmsLayers from "./layers/wmsLayers";
+import cogLayers from "./layers/cogLayers";
 
 export default {
 	key: '204188df-5c90-49d5-9f6d-83bed1c725bb',
@@ -11,9 +12,10 @@ export default {
 						key: 'controlledMap',
 						data: {
 							backgroundLayer: backgroundLayers.osm,
+							layers: [cogLayers.cogArgentina],
 							view: {
-								center: {lat: 50, lon: 15},
-								boxRange: 400000
+								center: {lat: -34, lon: -58.5},
+								boxRange: 100000
 							}
 						}
 					},
