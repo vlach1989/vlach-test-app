@@ -1,6 +1,9 @@
 import backgroundLayers from './layers/backgroundLayers';
 import wmsLayers from "./layers/wmsLayers";
 import cogLayers from "./layers/cogLayers";
+import vectorLayers from "./layers/vectorLayers";
+
+const layers = [vectorLayers.nuts2, vectorLayers.pointsCz50];
 
 export default {
 	key: '204188df-5c90-49d5-9f6d-83bed1c725bb',
@@ -12,10 +15,10 @@ export default {
 						key: 'controlledMap',
 						data: {
 							backgroundLayer: backgroundLayers.osm,
-							layers: [cogLayers.cogArgentina],
+							layers: layers,
 							view: {
-								center: {lat: -34, lon: -58.5},
-								boxRange: 100000
+								center: {lat: 50, lon: 15},
+								boxRange: 400000
 							}
 						}
 					},
@@ -48,7 +51,19 @@ export default {
 						}
 					}
 				}
-			}
+			},
+			selections: {
+				activeKey: 'test',
+				data: [
+					{
+						key: 'test',
+						data: {
+							color: '#00fffe',
+							hoveredColor: '#1efbff',
+						},
+					},
+				],
+			},
 		},
 	},
 };

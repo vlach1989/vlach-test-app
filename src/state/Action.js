@@ -14,6 +14,7 @@ function initApp(view) {
 
 		// apply view
 		dispatch(CommonAction.maps.updateStateFromView(view?.data?.state?.maps));
+		dispatch(CommonAction.selections.updateStateFromViewWithData(view?.data?.state?.selections));
 	};
 }
 

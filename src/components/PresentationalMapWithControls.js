@@ -1,5 +1,6 @@
 import React from "react";
 import {ReactLeafletMap, PresentationMap, MapControls} from "@gisatcz/ptr-maps";
+import {iconResources} from "../data/layers/vectorLayers";
 
 const PresentationalMapWithControls = ({backgroundLayer, layers, view}) => {
     return (
@@ -9,6 +10,7 @@ const PresentationalMapWithControls = ({backgroundLayer, layers, view}) => {
                 backgroundLayer={backgroundLayer}
                 layers={layers}
                 view={view}
+                resources={iconResources}
             >
                 <MapControls levelsBased zoomOnly/>
             </PresentationMap>
