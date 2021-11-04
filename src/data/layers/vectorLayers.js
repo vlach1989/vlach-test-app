@@ -150,7 +150,11 @@ export default {
             features: points_letna,
             fidColumnName: "id",
             pointAsMarker: true,
-            style: shapeStyle
+            style: shapeStyle,
+            selectable: true,
+            selected: {
+                test: {},
+            },
         }
     }
 };

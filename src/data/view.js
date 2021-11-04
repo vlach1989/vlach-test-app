@@ -4,6 +4,7 @@ import cogLayers from "./layers/cogLayers";
 import vectorLayers from "./layers/vectorLayers";
 
 const layers = [vectorLayers.nuts2, vectorLayers.pointsCz50];
+const layers2 = [vectorLayers.pointsLetna];
 
 export default {
 	key: '204188df-5c90-49d5-9f6d-83bed1c725bb',
@@ -15,7 +16,7 @@ export default {
 						key: 'controlledMap',
 						data: {
 							backgroundLayer: backgroundLayers.osm,
-							layers: layers,
+							layers: layers2,
 							view: {
 								center: {lat: 50, lon: 15},
 								boxRange: 400000

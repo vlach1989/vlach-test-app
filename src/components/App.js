@@ -27,8 +27,8 @@ const App = () => (
 	<div className="vta-App">
 		{/*<h3>Controlled map set</h3>*/}
 		{/*<ControlledMapSet stateMapSetKey="controlledMapSet"/>*/}
-		{/*<h3>Controlled map</h3>*/}
-		{/*<ControlledMap stateMapKey="controlledMap"/>*/}
+		<h3>Controlled map</h3>
+		<ControlledMap stateMapKey="controlledMap"/>
 		{/*<h3>Presentational map set</h3>*/}
 		{/*<PresentationalMapSet view={view} backgroundLayer={backgroundLayers.osm}/>*/}
 		{/*<h3>Presentational map with controls</h3>*/}
