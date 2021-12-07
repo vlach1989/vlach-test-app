@@ -1,5 +1,5 @@
 import React from "react";
-import {ReactLeafletMap, PresentationMap, MapControls, MapSet} from "@gisatcz/ptr-maps";
+import {ReactLeafletMap, PresentationMap, MapControls, MapSet, MapScale} from "@gisatcz/ptr-maps";
 import {connects} from "@gisatcz/ptr-state";
 
 const ConnectedMap = connects.Map(PresentationMap);
@@ -14,6 +14,7 @@ const ControlledMapSet = ({stateMapSetKey}) => {
                 connectedMapComponent={ConnectedMap}
             >
                 <MapControls levelsBased zoomOnly/>
+                <MapScale maxWidth={150} />
             </ConnectedMapSet>
         </div>
     );

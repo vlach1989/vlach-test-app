@@ -1,5 +1,12 @@
 import React from "react";
-import {ReactLeafletMap, PresentationMap, MapControls, MapSet, MapSetPresentationMap} from "@gisatcz/ptr-maps";
+import {
+    ReactLeafletMap,
+    PresentationMap,
+    MapControls,
+    MapSet,
+    MapSetPresentationMap,
+    MapScale
+} from "@gisatcz/ptr-maps";
 
 const PresentationalMapSet = ({backgroundLayer, view}) => {
     return (
@@ -18,6 +25,7 @@ const PresentationalMapSet = ({backgroundLayer, view}) => {
                 <MapSetPresentationMap mapKey='map-2'/>
                 <MapSetPresentationMap mapKey='map-3'/>
                 <MapControls levelsBased zoomOnly/>
+                <MapScale maxWidth={150} />
             </MapSet>
         </div>
     );

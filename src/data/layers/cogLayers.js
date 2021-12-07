@@ -18,5 +18,31 @@ export default {
                 }]
             }
         }
+    },
+    france: {
+        key: 'france',
+        type: 'cog',
+        opacity: 0.7,
+        options: {
+            url: 'https://s3.waw2-1.cloudferro.com/swift/v1/AUTH_b33f63f311844f2fbf62c5741ff0f734/ewoc-prd/merged/AEZ_11071/2019_summer1/2019_summer1_11071_activecropland_classification.tif',
+            style: {
+                rules: [
+                    {
+                        styles: [
+                            {
+                                color: null,
+                            },
+                            {
+                                bandIndex: 0,
+                                values: {
+                                    1: {color: '#ff6767'},
+                                    2: {color: '#2ca52a'}
+                                }
+                            },
+                        ],
+                    },
+                ],
+            }
+        }
     }
 };

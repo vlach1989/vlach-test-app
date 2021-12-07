@@ -1,8 +1,8 @@
 import React from "react";
-import {ReactLeafletMap, PresentationMap, MapControls} from "@gisatcz/ptr-maps";
+import {ReactLeafletMap, PresentationMap, MapControls, MapScale, DeckGlMap} from "@gisatcz/ptr-maps";
 import {iconResources} from "../data/layers/vectorLayers";
 
-const PresentationalMapWithControls = ({backgroundLayer, layers, view}) => {
+const PresentationalMapWithControls = ({backgroundLayer, layers, view, viewLimits}) => {
     return (
         <div className="vta-MapWrapper">
             <PresentationMap
@@ -10,9 +10,11 @@ const PresentationalMapWithControls = ({backgroundLayer, layers, view}) => {
                 backgroundLayer={backgroundLayer}
                 layers={layers}
                 view={view}
+                viewLimits={viewLimits}
                 resources={iconResources}
             >
                 <MapControls levelsBased zoomOnly/>
+                <MapScale maxWidth={150} />
             </PresentationMap>
         </div>
     );
